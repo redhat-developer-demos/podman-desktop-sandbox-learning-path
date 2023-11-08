@@ -12,4 +12,6 @@ podman run -d -p 6379:6379 --net podify --name redis quay.io/podman-desktop-demo
 if podman container exists python-frontend; then
   podman rm -f python-frontend
 fi
-podman run -d -p 8088:5000 --net podify --name python-frontend quay.io/podman-desktop-demo/podify-demo-frontend:v1
+
+#podman run -d -p 8088:5000 --net podify --name python-frontend quay.io/podman-desktop-demo/podify-demo-frontend:v1
+podman run -d -p 8088:5000 --net podify --name python-frontend $0
