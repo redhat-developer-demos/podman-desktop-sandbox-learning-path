@@ -14,4 +14,4 @@ if podman container exists python-frontend; then
 fi
 
 #podman run -d -p 8088:5000 --net podify --name python-frontend quay.io/podman-desktop-demo/podify-demo-frontend:v1
-podman run -d -p 8088:5000 --net podify --name python-frontend $0
+podman run -d -p 8088:5000 --net podify --name python-frontend $1
